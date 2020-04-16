@@ -1,4 +1,2 @@
-main:main.c
-	gcc -Wall -o main main.c
-
-
+main: main.cpp
+	g++ -o main -Wall main.cpp
