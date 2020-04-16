@@ -19,4 +19,6 @@ void chessboardView(char chessboard[9][9])
     for (char ch = 'a'; ch <= 'h'; ch++) {
         cout << "   " << ch;
     }
+	cout << "\n\nExample of move:e2 e4" << endl <<
+    "You also can use 'Enter' instead 'Space'. Input your move: ";
 }
