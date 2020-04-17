@@ -18,4 +18,3 @@ build/chessboardView.o: src/chessboardView.cpp
 clean:
 	rm -rf src/*.o 
 	rm -rf build/*.o main: main.cpp
-	g++ -o main -Wall main.cpp
