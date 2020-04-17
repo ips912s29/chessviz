@@ -1,5 +1,5 @@
-#ifndef chessboardMove
-#define chessboardMove
+#ifndef chessboardView
+#define chessboardView
 
 void chessboardView(char chessboard[9][9]);
 
