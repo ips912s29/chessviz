@@ -1,3 +1,10 @@
+#include <iostream>
+using namespace std;
+struct Figura // Фигуры
+{   
+    string Kingw="+w",Kingb="+b",Qw="Qw",Qb="Qb",Bw="Bw",Bb="Bb",
+        Kw="Kw",Kb="Kb",Rw="Rw", Rb="Rb", Pw="Pw", Pb="Pb";  
+};
 void chessboardInit(string chessboard[9][9],bool chessboard_b[9][9]) 
 {
     Figura f;
