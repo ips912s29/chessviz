@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
+
 string buff;
+
 void chessboardMove(int x, int y, string chessboard[9][9], bool chessboard_b[9][9])
 {
     if((8-y)>=0&&(8-(104-x))>=0) {    
