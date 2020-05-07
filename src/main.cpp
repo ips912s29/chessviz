@@ -1,19 +1,20 @@
+#include "chessboardInit.hpp"
+#include "chessboardMove.hpp"
+#include "chessboardView.hpp"
 #include <iostream>
-#include "chessboardView.h"
-#include "chessboardMove.h"
-#include "chessboardInit.h"
-using namespace std;
+#include <string>
 
 int main()
 {
-	string chessboard[9][9];
+    std::string chessboard[9][9];
     bool chessboard_b[9][9];
     int str = 0;
     char stb = 0;
-    chessboardInit(chessboard,chessboard_b);
-    while (cin >> stb >> str)
-    {       
-        chessboardMove(stb, str, chessboard, chessboard_b);           
+    chessboardInit(chessboard, chessboard_b);
+    chessboardView(chessboard);
+    while (std::cin >> stb >> str) {
+        chessboardMove(stb, str, chessboard, chessboard_b);
+        chessboardView(chessboard);
     }
     return 0;
 }

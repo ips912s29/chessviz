@@ -1,24 +1,24 @@
 #include <iostream>
-using namespace std;
-void chessboardView(char chessboard[9][9])
+#include <string>
+void chessboardView(std::string chessboard[9][9])
 {
-    cout << "\t\t\t";
+    std::cout << "\t\t\t";
     for (char ch = 'a'; ch <= 'h'; ch++) {
-        cout << "   " << ch;
+        std::cout << "   " << ch;
     }
-    cout << endl;
+    std::cout << std::endl;
     for (int i = 0; i < 8; i++) {
-        cout << "\t\t\t" << 8 - i << " ";
-        for (int j = 0; j < 8; j++) {
-            cout << " " << chessboard[i][j] << "  ";
+        std::cout << "\t\t\t" << 8 - i << " ";
+        for (int j = 0; j < 9; j++) {
+            std::cout << chessboard[i][j];
         }
-        cout << " " << 8 - i;
-        cout << endl;
+        std::cout << " " << 8 - i;
+        std::cout << std::endl;
     }
-    cout << "\t\t\t";
+    std::cout << "\t\t\t";
     for (char ch = 'a'; ch <= 'h'; ch++) {
-        cout << "   " << ch;
+        std::cout << "   " << ch;
     }
-	cout << "\n\nExample of move:e2 e4" << endl <<
-    "You also can use 'Enter' instead 'Space'. Input your move: ";
+    std::cout << "\n\nExample of move:e2 e4" << std::endl
+              << "You also can use 'Enter' instead 'Space'. Input your move: ";
 }
