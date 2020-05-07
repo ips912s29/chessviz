@@ -1,6 +1,6 @@
-#ifndef chessboardMove
-#define chessboardMove
+#ifndef CHESSBOARDMOVE
+#define CHESSBOARDMOVE
 
-void chessboardMove(int x, int y, string chessboard[9][9], bool chessboard_b[9][9]);
+int chesschessboardMove(MoveCoordinates* move);
 
 #endif
