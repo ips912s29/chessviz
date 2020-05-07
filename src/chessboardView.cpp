@@ -1,24 +1,18 @@
-#include <iostream>
-#include <string>
-void chessboardView(std::string chessboard[9][9])
+#include <stdio.h>
+void chessboardPrint() 
 {
-    std::cout << "\t\t\t";
-    for (char ch = 'a'; ch <= 'h'; ch++) {
-        std::cout << "   " << ch;
-    }
-    std::cout << std::endl;
-    for (int i = 0; i < 8; i++) {
-        std::cout << "\t\t\t" << 8 - i << " ";
-        for (int j = 0; j < 9; j++) {
-            std::cout << chessboard[i][j];
+    system("clear");
+    printf("\n");
+    for (int i = 0; i < 11; ++i) {
+        for (int j = 0; j < 11; ++j) {
+            if ((chessboard[i][j] > 'a' && chessboard[i][j] < 'z') && i <= 7 )  {
+                printf("\x1B[35m" "%c ", chessboard[i][j]);
+            } else {
+                printf(KMAG9 "%c ", chessboard[i][j]);
+            }
         }
-        std::cout << " " << 8 - i;
-        std::cout << std::endl;
+
+        printf("\n");
     }
-    std::cout << "\t\t\t";
-    for (char ch = 'a'; ch <= 'h'; ch++) {
-        std::cout << "   " << ch;
-    }
-    std::cout << "\n\nExample of move:e2 e4" << std::endl
-              << "You also can use 'Enter' instead 'Space'. Input your move: ";
+    printf("Example of move e2-e4.\n");
 }
