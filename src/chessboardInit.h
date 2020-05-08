@@ -5,7 +5,6 @@
 #include <string.h>
 
 typedef struct {
-    //char figure;
     int x1;
     int y1;
     int x2;
