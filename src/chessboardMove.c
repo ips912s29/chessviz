@@ -1,3 +1,6 @@
+#include "chessboardInit.h"
+
+extern char chessboard[11][11];
 
 int chesschessboardMove(MoveCoordinates* move)
 {
