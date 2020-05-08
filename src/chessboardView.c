@@ -8,7 +8,7 @@ void chessboardPrint()
             if ((chessboard[i][j] > 'a' && chessboard[i][j] < 'z') && i <= 7 )  {
                 printf("\x1B[35m" "%c ", chessboard[i][j]);
             } else {
-                printf(KMAG9 "%c ", chessboard[i][j]);
+                printf("%c ", chessboard[i][j]);
             }
         }
 

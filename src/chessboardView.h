@@ -1,6 +1,6 @@
-#ifndef chessboardView
-#define chessboardView
+#ifndef CHESSBOARDVIEW
+#define CHESSBOARDVIEW
 
-void chessboardView(char chessboard[9][9]);
+void chessboardPrint();
 
 #endif
