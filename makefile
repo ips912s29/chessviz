@@ -1,3 +1,5 @@
+.PHONY: all clean start
+
 all: bin/programm
 
 bin/programm: build/main.o build/chessboardMove.o build/chessboardView.o
