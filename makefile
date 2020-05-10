@@ -18,5 +18,7 @@ start:
 	./bin/programm
 
 clean:
-	rm -rf src/*.o 
+	rm -rf build/*.o
+	rm -rf bin/*
+ 
 

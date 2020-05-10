@@ -2,8 +2,8 @@
 #include "chessboardMove.h"
 #include "chessboardView.h"
 
-char chessboard[11][11] = {{'8', ' ', 'R', 'K', 'B', 'Q', '+', 'B', 'K', 'R'},
-                           {'7', ' ', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+char chessboard[11][11] = {{'8', ' ', 'r', 'k', 'b', 'q', '-', 'b', 'k', 'r'},
+                           {'7', ' ', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
                            {'6', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
                            {'5', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
                            {'4', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
@@ -47,14 +47,12 @@ int input_converter(MoveCoordinates* move, char* inp)
 }
 int input(MoveCoordinates* move)
 {
-loop:
     printf("\n");
     char inp[6];
-    int check = 0;
-    fgets(inp, 6, stdin);
-    check = input_converter(move, inp);
-    if (check == 1) {
-        goto loop;
+    int check = 1;
+    while (check != 0) {
+        fgets(inp, 6, stdin);
+        check = input_converter(move, inp);
     }
 
     return 0;
