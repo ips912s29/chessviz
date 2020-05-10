@@ -50,7 +50,7 @@ int input(MoveCoordinates* move)
     printf("\n");
     char inp[6];
     int check = 1;
-    while(check != 0) {
+    while (check != 0) {
         fgets(inp, 6, stdin);
         check = input_converter(move, inp);
     }
