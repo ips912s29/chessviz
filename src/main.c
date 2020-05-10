@@ -47,14 +47,12 @@ int input_converter(MoveCoordinates* move, char* inp)
 }
 int input(MoveCoordinates* move)
 {
-loop:
     printf("\n");
     char inp[6];
-    int check = 0;
-    fgets(inp, 6, stdin);
-    check = input_converter(move, inp);
-    if (check == 1) {
-        goto loop;
+    int check = 1;
+    while(check != 0) {
+        fgets(inp, 6, stdin);
+        check = input_converter(move, inp);
     }
 
     return 0;
