@@ -25,7 +25,6 @@ CTEST(MOVE, chessboard_move_right)
     temp = chesschessboardMove(move);
     exp = 0;
     ASSERT_EQUAL(exp, temp);
-
 }
 
 CTEST(MOVE, chessboard_move_wrong)
@@ -48,5 +47,4 @@ CTEST(MOVE, chessboard_move_wrong)
     temp = chesschessboardMove(move);
     exp = 1;
     ASSERT_EQUAL(exp, temp);
-
 }
