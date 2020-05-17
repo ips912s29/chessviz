@@ -17,14 +17,17 @@ build/src/chessboardView.o: src/chessboardView.c
 build/src/input.o: src/input.c
 	gcc -Wall -Werror -c src/input.c -o build/src/input.o
 
-bin/test: build/test/input_test.o  build/test/main.o 
-	gcc -Wall -Werror build/src/input.o build/test/input_test.o build/test/main.o -o bin/test
+bin/test: build/test/input_test.o  build/test/main.o build/test/chessboardMove_test.o
+	gcc -Wall -Werror build/src/input.o build/test/input_test.o build/test/main.o build/src/chessboardMove.o build/test/chessboardMove_test.o -o bin/test
 
 build/test/input_test.o: test/input_test.c
 	gcc -Wall -Werror -I thirdparty -I src -c test/input_test.c -o build/test/input_test.o
 
 build/test/main.o: test/main.c
 	gcc -Wall -Werror  -I thirdparty -I src -c test/main.c -o build/test/main.o
+
+build/test/chessboardMove_test.o: test/chessboardMove_test.c
+	gcc -Wall -Werror -I thirdparty -I src -c test/chessboardMove_test.c -o build/test/chessboardMove_test.o
 
 start:
 	./bin/programm
