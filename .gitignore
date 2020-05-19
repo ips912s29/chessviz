@@ -54,3 +54,4 @@ dkms.conf
 *.o
 #main.c#
 main
+bin/*
