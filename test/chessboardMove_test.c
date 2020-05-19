@@ -1,7 +1,7 @@
-#include "../src/chessboardInit.h"
-#include "../src/chessboardMove.h"
-#include "../src/input.h"
-#include "../thirdparty/ctest.h"
+#include "chessboardInit.h"
+#include "chessboardMove.h"
+#include "input.h"
+#include "ctest.h"
 
 char inp[6];
 
